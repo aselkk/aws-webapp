@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: Product Service API
+  version: 1.0.0
+paths:
+  /products:
+    get:
+      summary: Get a list of products
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                products:
+                  - id: "1"
+                    name: "Product 1"
+                  - id: "2"
+                    name: "Product 2"
+  /products/{productId}:
+    get:
+      summary: Get product by ID
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: ID of the product
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              example:
+                product:
+                  id: "1"
+                  name: "Product 1"
+        '404':
+          description: Product not found
+          content:
+            application/json:
+              example:
+                message: Product not found
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              example:
+                message: An error occurred
