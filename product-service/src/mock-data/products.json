@@ -1,0 +1,38 @@
+[
+  { 
+    "id": "01",
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": "1925"
+  },
+  { 
+    "id": "02",
+    "name": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": "1925"
+  },
+  { 
+    "id": "03",
+    "name": "Lolita",
+    "author": "Vladimir Nabokov",
+    "year": "1925"
+  },
+  { 
+    "id": "04",
+    "name": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry",
+    "year": "1925"
+  },
+  { 
+    "id": "05",
+    "name": "The Great",
+    "author": "F. Scott Fitzgerald",
+    "year": "1925"
+  },
+  { 
+    "id": "06",
+    "name": "The Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": "1925"
+  }
+]
