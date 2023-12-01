@@ -1,15 +1,22 @@
 import { buildResponse } from "../../helpers/utils"
-import products from '../mock-data/products.json'
+import { getProductsFromDB } from "./getProductsFromDB";
 
-export const handler = async (event:any) => {
-
+export const handler = async (event: any) => {
   try {
-    return buildResponse(200, {
-      products
-    })
-  } catch (err:any) {
+    const products = await getProductsFromDB();
+
+    if (products) {
+      return buildResponse(200, {
+        products
+      });
+    } else {
+      return buildResponse(500, {
+        message: "Error retrieving products from the database."
+      });
+    }
+  } catch (err: any) {
     return buildResponse(500, {
       message: err.message
-    })
+    });
   }
-}
+};
