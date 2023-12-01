@@ -1,6 +1,6 @@
 import { handler } from './getProductsList'
 import { buildResponse } from '../../helpers/utils'
-import products from '../mock-data/products.json'
+import { products } from '../mock-data/products.ts'
 
 jest.mock('../../helpers/utils')
 

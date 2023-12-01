@@ -22,6 +22,8 @@
     "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
     "typeRoots": [
       "./node_modules/@types"
     ]
