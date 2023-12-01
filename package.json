@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "aws-sdk": "^2.1506.0"
+    "aws-sdk": "^2.1506.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.7"
   }
 }
